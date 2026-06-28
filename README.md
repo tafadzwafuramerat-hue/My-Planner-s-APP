@@ -84,7 +84,7 @@ Add screenshots of:
 
 ---
 
-## Author
+## Authors
 
 Developed by: **Williams , Tafadzwa , Nigel**
 
