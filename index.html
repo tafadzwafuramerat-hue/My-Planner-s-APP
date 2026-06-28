@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>My Planner's App</h1>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav">
+            <button onclick="showPage('home')">Home</button>
+            <button onclick="showPage('dashboard')">Dashboard</button>
+            <button onclick="showPage('tasks')">Tasks</button>
+            <button onclick="showPage('calendar')">Calendar</button>
+            <button onclick="showPage('notes')">Notes</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="page active">
+
+            <h2>Welcome to My planner's App</h2>
+
+            <div class="welcome-box">
+                <h3>My Daily Planner</h3>
+
+                <p>
+                    Plan your day, manage your tasks,
+                    write notes and keep everything in one place.
+                </p>
+
+                <div class="time-box">
+
+                    <div class="small-card">
+                        <h4>Today's Date</h4>
+                        <p id="todayDate"></p>
+                    </div>
+
+                    <div class="small-card">
+                        <h4>Current Time</h4>
+                        <p id="clock"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="dashboard" class="page">
+
+            <h2>Dashboard</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3 id="totalTasks">0</h3>
+                    <p>Total Tasks</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="completedTasks">0</h3>
+                    <p>Completed</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="pendingTasks">0</h3>
+                    <p>Pending</p>
+                </div>
+
+                <div class="card">
+                    <h3 id="totalNotes">0</h3>
+                    <p>Notes</p>
+                </div>
+
+            </div>
+
+            <div class="progress">
+
+                <h3>Progress</h3>
+
+                <div class="bar">
+                    <div id="progressBar"></div>
+                </div>
+
+                <p id="progressText">0%</p>
+
+            </div>
+
+        </section>
+
+        <section id="tasks" class="page">
+
+            <h2>Tasks</h2>
+
+            <div class="task-form">
+
+                <input type="text" id="taskInput" placeholder="Enter a task">
+
+                <button onclick="addTask()">
+                    Add Task
+                </button>
+
+            </div>
+
+            <ul id="taskList">
+
+            </ul>
+
+        </section>
+
+        <section id="calendar" class="page">
+
+            <h2>Calendar</h2>
+
+            <div class="calendar">
+
+                <h3 id="monthTitle"></h3>
+
+                <div class="week">
+
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+
+                </div>
+
+                <div id="calendarDays">
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="notes" class="page">
+
+            <h2>Notes</h2>
+
+            <textarea id="noteInput" placeholder="Write your notes here">
+</textarea>
+
+            <div class="note-buttons">
+
+                <button onclick="saveNote()">
+                    Save Note
+                </button>
+
+                <button onclick="clearNote()">
+                    Clear
+                </button>
+
+            </div>
+
+            <div id="savedNote">
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            Smart Planner © 2026
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
