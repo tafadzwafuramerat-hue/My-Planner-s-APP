@@ -86,7 +86,7 @@ Add screenshots of:
 
 ## Authors
 
-Developed by: **Williams , Tafadzwa , Nigel**
+Developed by: **Tafadzwa , William , Nigel**
 
 
 
