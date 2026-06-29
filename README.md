@@ -1,4 +1,4 @@
-# My Planner's App
+/# My Planner's App
 
 <!-- Description -->
 
@@ -60,17 +60,8 @@ No additional software or installation is required.
 * View the current month's calendar.
 * All tasks and notes are automatically saved in your browser.
 
-## Screenshots
 
-Add screenshots of:
 
-* Home page
-* Dashboard
-* Tasks page
-* Calendar page
-* Notes page
-
----
 
 ## Future Improvements
 
@@ -82,7 +73,6 @@ Add screenshots of:
 * Cloud synchronization
 * Drag-and-drop task organization
 
----
 
 ## Authors
 
