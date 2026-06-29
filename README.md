@@ -84,9 +84,9 @@ Add screenshots of:
 
 ---
 
-## Author
+## Authors
 
-Developed by: **Williams , Tafadzwa , Nigel**
+Developed by: **Tafadzwa , William , Nigel**
 
 
 
